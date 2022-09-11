@@ -7,17 +7,27 @@ class ApplicationController < Sinatra::Base
     all_movies.to_json
   end
 
-  get './movies/:id' do
+  get '/movies/:id' do
     movies = Movie.find(params[:id])
     movies.to_json
   end
 
-  get './reviews/:id' do
+  get '/reviews' do
+    all_reviews = Review.all
+    all_reviews.to_json
+  end
+
+  get '/reviews/:id' do
     reviews = Review.find(params[:id])
     reviews.to_json
   end
 
-  get './users/:id' do
+  get '/users' do
+    all_users = User.all
+    all_users.to_json
+  end
+
+  get '/users/:id' do
     users = User.find(params[:id])
     users.to_json
   end
