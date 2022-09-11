@@ -3,7 +3,13 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    { message: "Good luck with your project!" }.to_json
+    all_movies = Movie.all
+    all_movies.to_json
+  end
+
+  get './movies/:id' do
+    movies = Movie.find(params[:id])
+    movies.to_json
   end
 
 end
