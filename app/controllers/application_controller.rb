@@ -72,6 +72,14 @@ class ApplicationController < Sinatra::Base
     movie.to_json
   end
 
+  patch '/movies/:id' do
+    movie = Movie.find(params[:id])
+    movie.update(
+      rating: params[:rating]
+    )
+    movie.to_json
+  end
+
   patch '/reviews/:id' do
     review = Review.find(params[:id])
     review.update(
@@ -80,6 +88,14 @@ class ApplicationController < Sinatra::Base
       rating: params[:rating],
       movie_id: params[:movie_id],
       user_id: params[:user_id]
+    )
+    review.to_json
+  end
+
+  patch '/reviews/:id' do
+    review = Review.find(params[:id])
+    review.update(
+      rating: params[:rating]
     )
     review.to_json
   end
