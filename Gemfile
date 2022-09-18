@@ -51,4 +51,4 @@ group :test do
   gem "rspec-json_expectations", "~> 2.2"
 end
 
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master', :require => false
