@@ -6,8 +6,6 @@ class TvShows < ActiveRecord::Migration[6.1]
       t.integer :year
       t.string :plot
       t.integer :rating
-      t.string :characters
-
       t.timestamps
     end
   end
