@@ -14,6 +14,11 @@ class ApplicationController < Sinatra::Base
       tv_shows.to_json
   end
 
+  get '/tv_shows/:title' do
+      tv_shows = TvShow.find_by(title: params[:title])
+      tv_shows.to_json
+  end
+
   get '/episodes' do
       all_episodes = Episode.all
       all_episodes.to_json
@@ -37,6 +42,11 @@ class ApplicationController < Sinatra::Base
   get "/movies" do
     all_movies = Movie.all
     all_movies.to_json
+  end
+
+  get '/movies/:title' do
+      movies = Movie.find_by(title: params[:title])
+      movies.to_json
   end
 
   get '/movies/:id' do
