@@ -1,13 +1,13 @@
+require 'faker'
 puts "🌱 Seeding spices..."
 
-# Seed your database here
 20.times do
   movie_list = Movie.create(
     title: Faker::Movie.title,
-    image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['movie']),
     year: Faker::Number.between(from: 1900, to: 2020),
     plot: Faker::Movie.quote,
-    rating: Faker::Number.between(from: 1, to: 5)
+    rating: Faker::Number.between(from: 1, to: 5),
+    review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4)
 )
 end
 
@@ -29,7 +29,7 @@ end
 end
 
 10.times do
-  tv_show = TvShow.create(
+  tv_show = Tv_Show.create(
     title: Faker::TvShows::GameOfThrones.character,
     image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['tv show']),
     year: Faker::Number.between(from: 1900, to: 2020),
@@ -41,7 +41,10 @@ end
 10.times do
   episode = Episode.create(
     title: Faker::TvShows::GameOfThrones.character,
+    image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['tv show']),
+    year: Faker::Number.between(from: 1900, to: 2020),
     plot: Faker::TvShows::GameOfThrones.quote,
+    rating: Faker::Number.between(from: 1, to: 5),
     tv_show_id: Faker::Number.between(from: 1, to: 10)
   )
 end
@@ -49,10 +52,12 @@ end
 10.times do
   character = Character.create(
     name: Faker::TvShows::GameOfThrones.character,
-    actor: Faker::TvShows::GameOfThrones.actor,
     image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['character']),
+    age: Faker::Number.between(from: 1, to: 100),
+    bio: Faker::TvShows::GameOfThrones.quote,
     tv_show_id: Faker::Number.between(from: 1, to: 10)
   )
 end
+
 
 puts "✅ Done seeding!"
