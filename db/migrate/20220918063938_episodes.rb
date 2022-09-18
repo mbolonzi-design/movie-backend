@@ -7,7 +7,6 @@ class Episodes < ActiveRecord::Migration[6.1]
       t.string :plot
       t.integer :rating
       t.integer :tv_show_id
-
       t.timestamps
     end
   end

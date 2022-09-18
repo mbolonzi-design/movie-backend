@@ -57,10 +57,10 @@ ActiveRecord::Schema.define(version: 2022_09_18_135546) do
 
   create_table "tv_shows", force: :cascade do |t|
     t.string "title"
-    t.string "image_url"
     t.integer "year"
-    t.string "plot"
+    t.text "plot"
     t.integer "rating"
+    t.text "review"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
