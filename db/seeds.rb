@@ -34,7 +34,7 @@ Tv_Show.create(
   year: 2005,
   plot: "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
   rating: 5,
-  review: "The Office is a hilarious mockumentary that follows the lives of the employees at Dunder Mifflin, a paper company in Scranton, Pennsylvania. The show is a spin-off of the British series of the same name, and is presented in a documentary style, with the characters frequently breaking the fourth wall to address the camera directly."
+  review: "The Office is a hilarious mockumentary that follows the lives of the employees at Dunder Mifflin, a paper company in Scranton, Pennsylvania."
 )
 
 
@@ -43,7 +43,7 @@ Tv_Show.create(
   year: 1994,
   plot: "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
   rating: 5,
-  review: "Friends is an American sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer, the show revolved around six friends in their 20s and 30s who lived in Manhattan, New York City."
+  review: "Friends is an American sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer."
 )
 
 Tv_Show.create(
@@ -59,7 +59,7 @@ Tv_Show.create(
   year: 2007,
   plot: "The Big Bang Theory is an American television sitcom created by Chuck Lorre and Bill Prady, both of whom serve as executive producers on the series, along with Steven Molaro.",
   rating: 5,
-  review: "It premiered on CBS on September 24, 2007. The show is centered on five characters living in Pasadena, California: roommates Leonard Hofstadter and Sheldon Cooper.The geekiness and intellect of the four guys is contrasted for comic effect with Penny's social skills and common sense."
+  review: "It premiered on CBS on September 24, 2007. The show is centered on five characters living in Pasadena, California: roommates Leonard Hofstadter and Sheldon Cooper."
 )
 
 Tv_Show.create(
@@ -67,7 +67,7 @@ Tv_Show.create(
   year: 2019,
   plot: "The Mandalorian is an American space Western web television series created by Jon Favreau and produced by Lucasfilm. It is set in the Star Wars galaxy five years after the events of Return of the Jedi and follows the travails of a lone gunfighter in the outer reaches of the galaxy far from the authority of the New Republic.",
   rating: 5,
-  review: "The Mandalorian is an American space Western web television series created by Jon Favreau and produced by Lucasfilm. It is set in the Star Wars galaxy five years after the events of Return of the Jedi and follows the travails of a lone gunfighter in the outer reaches of the galaxy far from the authority of the New Republic."
+  review: "The Mandalorian is an American space Western web television series created by Jon Favreau and produced by Lucasfilm."
 )
 
 Tv_Show.create(
@@ -75,7 +75,7 @@ Tv_Show.create(
   year: 2019,
   plot: "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
   rating: 5,
-  review: "The Witcher is an American fantasy drama streaming television series produced by Lauren Schmidt Hissrich, based on the book series of the same name by Polish writer Andrzej Sapkowski. The series is set in a fictional fantasy world and follows the story of Geralt of Rivia, a monster hunter known as a witcher."
+  review: "The Witcher is an American fantasy drama streaming television series produced by Lauren Schmidt Hissrich. The series is set in a fictional fantasy world and follows the story of Geralt of Rivia, a monster hunter known as a witcher."
 )
 
 10.times do
