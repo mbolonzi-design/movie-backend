@@ -43,7 +43,7 @@ Tv_Show.create(
   year: 1994,
   plot: "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
   rating: 5,
-  review: "Friends is an American sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer."
+  review: "Friends is an American sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons."
 )
 
 Tv_Show.create(
@@ -51,7 +51,7 @@ Tv_Show.create(
   year: 1989,
   plot: "The satiric adventures of a working-class family in the misfit city of Springfield.",
   rating: 5,
-  review: "The Simpsons is an American animated sitcom created by Matt Groening for the Fox Broadcasting Company. The series is a satirical depiction of working-class life, epitomized by the Simpson family, which consists of Homer, Marge, Bart, Lisa, and Maggie."
+  review: "The series is a satirical depiction of working-class life, epitomized by the Simpson family, which consists of Homer, Marge, Bart, Lisa, and Maggie."
 )
 
 Tv_Show.create(
@@ -65,7 +65,7 @@ Tv_Show.create(
 Tv_Show.create(
   title: "The Mandalorian",
   year: 2019,
-  plot: "The Mandalorian is an American space Western web television series created by Jon Favreau and produced by Lucasfilm. It is set in the Star Wars galaxy five years after the events of Return of the Jedi and follows the travails of a lone gunfighter in the outer reaches of the galaxy far from the authority of the New Republic.",
+  plot: "It is set in the Star Wars galaxy five years after the events of Return of the Jedi and follows the travails of a lone gunfighter in the outer reaches of the galaxy far from the authority of the New Republic.",
   rating: 5,
   review: "The Mandalorian is an American space Western web television series created by Jon Favreau and produced by Lucasfilm."
 )
