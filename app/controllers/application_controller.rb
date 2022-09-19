@@ -19,6 +19,27 @@ class ApplicationController < Sinatra::Base
       tv_shows.to_json
   end
 
+  get '/tv_shows/:year' do
+      tv_shows = Tv_Show.find_by(year: params[:year])
+      tv_shows.to_json
+  end
+
+  get '/tv_shows/:rating' do
+      tv_shows = Tv_Show.find_by(rating: params[:rating])
+      tv_shows.to_json
+  end
+
+  get '/tv_shows/:id/episodes' do
+      tv_shows = Tv_Show.find(params[:id])
+      tv_shows.episodes.to_json
+  end
+
+  get '/tv_shows/:id/characters' do
+      tv_shows = Tv_Show.find(params[:id])
+      tv_shows.characters.to_json
+  end
+
+
   get '/episodes' do
       all_episodes = Episode.all
       all_episodes.to_json
