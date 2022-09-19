@@ -5,17 +5,17 @@ class ApplicationController < Sinatra::Base
   #GET /TvShows
 
   get '/tv_shows' do
-      all_tv_shows = TvShow.all
+      all_tv_shows = Tv_Show.all
       all_tv_shows.to_json
   end
 
   get '/tv_shows/:id' do
-      tv_shows = TvShow.find(params[:id])
+      tv_shows = Tv_Show.find(params[:id])
       tv_shows.to_json
   end
 
   get '/tv_shows/:title' do
-      tv_shows = TvShow.find_by(title: params[:title])
+      tv_shows = Tv_Show.find_by(title: params[:title])
       tv_shows.to_json
   end
 
